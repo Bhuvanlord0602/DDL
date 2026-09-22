@@ -2,10 +2,13 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ddl.arjunlabscom.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: 'e-HusbREtfuUzN8uaHqQYikXMX4IGU2fqwddq-BCSzk',
+  },
   title: 'DDL | CAD Design, Machining, 3D Printing & Reverse Engineering',
   description: 'DDL provides CAD design, engineering drawings, machining, rapid prototyping, 3D printing and reverse engineering solutions for engineering and manufacturing needs.',
   keywords: [
